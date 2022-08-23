@@ -1196,7 +1196,7 @@ contract TreasuryUtil is ReentrancyGuard, AccessControl {
 
         for (uint256 pid = 0; pid < length; ++pid) {
             pool = poolInfo[pid];
-            if (pool.enabled = true)
+            if (pool.enabled == true)
             {
                 convertReflectionsToRC(pool.token, pool.tokenType);
             }
